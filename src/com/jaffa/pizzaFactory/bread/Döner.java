@@ -1,9 +1,10 @@
 package com.jaffa.pizzaFactory.bread;
 
-public class Döner implements Bread{
+public class Döner extends Bread{
 
-    @Override
-    public void createFood() {
-        System.out.println("You ordered a Döner!");
+    public Döner(){
+        super("Döner", "Pita", "Garlic Sauce");
+        this.toppings.add("Döner");
+        this.toppings.add("Lettuce");
     }
 }

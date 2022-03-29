@@ -1,8 +1,13 @@
 package com.jaffa.pizzaFactory.bread;
 
-public class Healthy implements Bread{
-    @Override
-    public void createFood() {
-        System.out.println("You ordered a healthy sandwich!");
+public class Healthy extends Bread{
+    public Healthy(){
+        super("Healthy", "Pistolet", "Honey Mustard sauce");
+        this.toppings.add("Lettuce");
+        this.toppings.add("Cheese");
+        this.toppings.add("Ham");
+        this.toppings.add("Eggs");
+        this.toppings.add("Cucumber");
+        this.toppings.add("Tomato");
     }
 }

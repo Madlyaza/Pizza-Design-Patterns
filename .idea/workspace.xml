@@ -2,18 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be5a84d-0763-467f-8977-bb358c1ca02f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaBuilder/CalzonePizzaBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaBuilder/Director.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaBuilder/FlatPizzaBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaBuilder/PizzaBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaBuilder/components/bases/BaseType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaBuilder/components/sauces/SauceType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaBuilder/components/toppings/ToppingType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaBuilder/components/toppings/Toppings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaBuilder/pizzas/Calzone.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jaffa/ItalianRestaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/ItalianRestaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaBuilder/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaBuilder/pizzas/Flat.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +113,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1648575895420</updated>
-      <workItem from="1648575896905" duration="8602000" />
+      <workItem from="1648575896905" duration="9691000" />
     </task>
     <servers />
   </component>

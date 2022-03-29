@@ -2,18 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be5a84d-0763-467f-8977-bb358c1ca02f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/ConcreteCreatorBread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/ConcreteCreatorPizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Bread.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Döner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Healthy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/MargaritaPizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/PepperoniPizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/Pizza.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/SalamiPizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/MargheritaPizza.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/Creator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/ConcreteCreatorBread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/ConcreteCreatorBread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/ConcreteCreatorPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/ConcreteCreatorPizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/Creator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/Creator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Bread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Bread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Döner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Döner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Healthy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Healthy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/MargaritaPizza.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/PepperoniPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/PepperoniPizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/Pizza.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/SalamiPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/SalamiPizza.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +25,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -100,6 +101,11 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jaffa.pizzaFactory.bread" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">

@@ -10,7 +10,7 @@ public class PreviousCommand extends Command
     }
 
     @Override
-    public boolean execute()
+    public boolean execute(String string)
     {
 
         return true;

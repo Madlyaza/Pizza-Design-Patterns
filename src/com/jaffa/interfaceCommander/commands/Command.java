@@ -18,5 +18,5 @@ public abstract class Command {
         //orderingSystem.textField.setText(backup);
     }
 
-    public abstract boolean execute();
+    public abstract boolean execute(String string);
 }

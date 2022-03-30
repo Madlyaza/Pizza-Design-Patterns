@@ -12,7 +12,7 @@ public class ConcreteCreatorBread {
         if(breadType.equalsIgnoreCase("döner")){
             return new Döner();
         }
-        else if(breadType.equalsIgnoreCase("healty")){
+        else if(breadType.equalsIgnoreCase("healthy")){
             return new Healthy();
         }
 

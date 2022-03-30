@@ -2,9 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be5a84d-0763-467f-8977-bb358c1ca02f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/OrderingSystem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/CancelCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/NextCommand.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/PreviousCommand.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jaffa/ItalianRestaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/ItalianRestaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/OrderingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/OrderingSystem.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +120,7 @@
       <option name="presentableId" value="Default" />
       <updated>1648575895420</updated>
       <workItem from="1648575896905" duration="9717000" />
-      <workItem from="1648645486327" duration="4650000" />
+      <workItem from="1648645486327" duration="6117000" />
     </task>
     <servers />
   </component>

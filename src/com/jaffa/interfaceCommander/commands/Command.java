@@ -1,4 +1,6 @@
-package com.jaffa.interfaceCommander;
+package com.jaffa.interfaceCommander.commands;
+
+import com.jaffa.interfaceCommander.OrderingSystem;
 
 public abstract class Command {
     public OrderingSystem orderingSystem;

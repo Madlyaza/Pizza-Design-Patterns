@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be5a84d-0763-467f-8977-bb358c1ca02f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/ItalianRestaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/ItalianRestaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/Creator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/Creator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Bread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Bread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Döner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Döner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Healthy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/bread/Healthy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/MargheritaPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/MargheritaPizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/PepperoniPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/PepperoniPizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/Pizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/Pizza.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/SalamiPizza.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaFactory/pizza/SalamiPizza.java" afterDir="false" />
+
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +121,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1648575895420</updated>
-      <workItem from="1648575896905" duration="539000" />
+      <workItem from="1648575896905" duration="9717000" />
+      <workItem from="1648645486327" duration="4650000" />
     </task>
     <servers />
   </component>

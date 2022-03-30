@@ -13,8 +13,9 @@ public class ItalianRestaurant
 {
     public static void main(String[] args)
     {
-        new ItalianRestaurant();
 
+        OrderingSystem orderingSystem = new OrderingSystem();
+        orderingSystem.init();
 //        Director director = new Director();
 //        CalzonePizzaBuilder builder = new CalzonePizzaBuilder();
 //        director.constructCalzonePizza(builder);

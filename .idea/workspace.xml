@@ -2,14 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be5a84d-0763-467f-8977-bb358c1ca02f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/CancelCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/NextCommand.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/PreviousCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/ItalianRestaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/ItalianRestaurant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/OrderingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/OrderingSystem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/Command.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,13 +12,16 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Enum" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="274OStTWjuWMkY9dfHYROYfjCf5" />
   <component name="ProjectLevelVcsManager">
@@ -93,6 +88,12 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.jaffa.pizzaFactory.bread" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true">
@@ -126,5 +127,16 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

@@ -1,16 +1,28 @@
 package com.jaffa;
 
+import com.jaffa.pizzaFactory.ConcreteCreatorBread;
+import com.jaffa.pizzaFactory.ConcreteCreatorPizza;
+import com.jaffa.pizzaFactory.Creator;
+import com.jaffa.pizzaFactory.pizza.Pizza;
 import javax.swing.*;
 
 import com.jaffa.interfaceCommander.OrderingSystem;
 
+import com.jaffa.pizzaBuilder.CalzonePizzaBuilder;
+import com.jaffa.pizzaBuilder.Director;
+import com.jaffa.pizzaBuilder.pizzas.Calzone;
 import java.awt.*;
 
 public class ItalianRestaurant
 {
     public static void main(String[] args)
     {
+        ConcreteCreatorBread breadFactory = new ConcreteCreatorBread();
+        ConcreteCreatorPizza pizzaFactory = new ConcreteCreatorPizza();
+        Creator factory = new Creator(pizzaFactory, breadFactory);
 
+        Pizza pizza1 = factory.orderPizza("Margherita");
+        System.out.println("We ordered a " + pizza1.getName() + "\n");
         OrderingSystem orderingSystem = new OrderingSystem();
         orderingSystem.init();
 //        Director director = new Director();

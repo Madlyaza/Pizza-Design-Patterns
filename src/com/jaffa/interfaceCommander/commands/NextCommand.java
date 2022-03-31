@@ -1,14 +1,11 @@
 package com.jaffa.interfaceCommander.commands;
 
-import com.jaffa.ItalianRestaurant;
 import com.jaffa.interfaceCommander.OrderingSystem;
 import com.jaffa.pizzaBuilder.components.bases.BaseType;
 import com.jaffa.pizzaBuilder.components.sauces.SauceType;
 import com.jaffa.pizzaBuilder.components.toppings.ToppingType;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 public class NextCommand extends Command
 {

@@ -1,13 +1,15 @@
 package com.jaffa.interfaceCommander;
 
 import com.jaffa.interfaceCommander.commands.CancelCommand;
-import com.jaffa.interfaceCommander.commands.Command;
 import com.jaffa.interfaceCommander.commands.NextCommand;
+import com.jaffa.orderObserver.BleeperListener;
+import com.jaffa.orderObserver.OrderManager;
+import com.jaffa.orderObserver.ScreenListener;
+import com.jaffa.orderObserver.SpeakerListener;
 import com.jaffa.interfaceCommander.commands.PreviousCommand;
 import com.jaffa.pizzaBuilder.CalzonePizzaBuilder;
 import com.jaffa.pizzaBuilder.Director;
 import com.jaffa.pizzaBuilder.FlatPizzaBuilder;
-import com.jaffa.pizzaBuilder.components.bases.BaseType;
 import com.jaffa.pizzaBuilder.pizzas.Calzone;
 import com.jaffa.pizzaFactory.ConcreteCreatorBread;
 import com.jaffa.pizzaFactory.ConcreteCreatorPizza;
@@ -110,6 +112,16 @@ public class OrderingSystem
         FlatPizzaBuilder builder = new FlatPizzaBuilder();
         director.constructFlatPizza(builder, builderMap);
         builder.getPizza().printInfo();
+    }
+
+    public void notifier()
+    {
+        OrderManager orderManager = new OrderManager();
+
+        orderManager.subscribe(new ScreenListener());
+        orderManager.subscribe(new BleeperListener());
+        orderManager.subscribe(new SpeakerListener());
+        orderManager.notifyListener();
     }
 
     public class ShortcutListener implements KeyListener {

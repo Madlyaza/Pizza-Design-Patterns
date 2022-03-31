@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be5a84d-0763-467f-8977-bb358c1ca02f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/Command.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/NextCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/NextCommand.java" afterDir="false" />
@@ -151,6 +152,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

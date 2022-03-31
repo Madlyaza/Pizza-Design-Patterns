@@ -35,11 +35,13 @@ public class NextCommand extends Command
                 addToComboBox(new String[]{"Custom Pizza", "Pre Build Pizza", "Bread"});
                 orderingSystem.label.setText("Choose order");
                 orderingSystem.pizzaFactoryCreator(selectedChoice);
+                orderingSystem.notifier();
                 break;
             case "Healthy", "Döner":
                 addToComboBox(new String[]{"Custom Pizza", "Pre Build Pizza", "Bread"});
                 orderingSystem.label.setText("Choose order");
                 orderingSystem.breadFactoryCreator(selectedChoice);
+                orderingSystem.notifier();
                 break;
             case "CALZONE", "FLAT":
                 orderingSystem.builderMap.put("BaseType", selectedChoice);
@@ -67,6 +69,7 @@ public class NextCommand extends Command
                 orderingSystem.pizzaBuilder();
                 setLabel("Choose order");
                 orderingSystem.builderMap.clear();
+                orderingSystem.notifier();
                 break;
             default:
                 return false;

@@ -11,8 +11,7 @@ public class Director
 {
     public void constructCalzonePizza(PizzaBuilder builder, Map map)
     {
-
-        builder.setPizzaBase(BaseType.valueOf(map.get("BaseType").toString()));
+        builder.setPizzaBase(BaseType.CALZONE);
         builder.setPizzaSauce(SauceType.valueOf(map.get("SauceType").toString()));
         Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
         while(iterator.hasNext())
@@ -27,7 +26,7 @@ public class Director
 
     public void constructFlatPizza(PizzaBuilder builder, Map map)
     {
-        builder.setPizzaBase(BaseType.valueOf(map.get("BaseType").toString()));
+        builder.setPizzaBase(BaseType.FLAT);
         builder.setPizzaSauce(SauceType.valueOf(map.get("SauceType").toString()));
         Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
         while(iterator.hasNext())

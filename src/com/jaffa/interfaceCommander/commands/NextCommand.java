@@ -20,7 +20,6 @@ public class NextCommand extends Command
     @Override
     public boolean execute(String selectedChoice)
     {
-
         switch (selectedChoice)
         {
             case "Custom Pizza":
@@ -36,9 +35,11 @@ public class NextCommand extends Command
                 setLabel("Choose Bread");
                 break;
             case "Margherita", "Salami", "Pepperoni":
+                addToComboBox(new String[]{"Custom Pizza", "Pre Build Pizza", "Bread"});
                 orderingSystem.pizzaFactoryCreator(selectedChoice);
                 break;
             case "Healthy", "Döner":
+                addToComboBox(new String[]{"Custom Pizza", "Pre Build Pizza", "Bread"});
                 orderingSystem.breadFactoryCreator(selectedChoice);
                 break;
             case "CALZONE", "FLAT":
@@ -63,7 +64,10 @@ public class NextCommand extends Command
                 removeFromComboBox(selectedChoice);
                 break;
             case "Finished":
+                addToComboBox(new String[]{"Custom Pizza", "Pre Build Pizza", "Bread"});
                 orderingSystem.pizzaBuilder();
+                setLabel("Choose order");
+                orderingSystem.builderMap.clear();
                 break;
             default:
                 return false;
@@ -74,15 +78,6 @@ public class NextCommand extends Command
     public void removeFromComboBox(String choice)
     {
         orderingSystem.cb.removeItem(choice);
-    }
-
-    public void addToComboBox(String[] list)
-    {
-        orderingSystem.cb.removeAllItems();
-        for (String item : list)
-        {
-            orderingSystem.cb.addItem(item);
-        }
     }
 
     public void setLabel(String text)

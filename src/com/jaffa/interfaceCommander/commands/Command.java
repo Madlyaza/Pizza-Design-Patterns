@@ -19,4 +19,13 @@ public abstract class Command {
     }
 
     public abstract boolean execute(String string);
+
+    public void addToComboBox(String[] list)
+    {
+        orderingSystem.cb.removeAllItems();
+        for (String item : list)
+        {
+            orderingSystem.cb.addItem(item);
+        }
+    }
 }

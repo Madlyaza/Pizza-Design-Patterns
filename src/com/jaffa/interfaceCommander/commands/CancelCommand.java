@@ -10,9 +10,11 @@ public class CancelCommand extends Command
     }
 
     @Override
-    public boolean execute(String string)
+    public boolean execute(String selectedChoice)
     {
-
+        addToComboBox(new String[]{"Custom Pizza", "Pre Build Pizza", "Bread"});
+        orderingSystem.label.setText("Choose order");
+        orderingSystem.builderMap.clear();
         return true;
     }
 }

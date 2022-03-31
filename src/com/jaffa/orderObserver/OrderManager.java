@@ -4,7 +4,6 @@ import java.util.*;
 
 public class OrderManager
 {
-    private String orderReadyMessage;
     private List<EventListener> orderList = new ArrayList<>();
 
     public void subscribe(EventListener eventListener){
@@ -15,10 +14,9 @@ public class OrderManager
         this.orderList.remove(eventListener);
     }
 
-    public void notify(String orderReadyMessage){
-        this.orderReadyMessage = orderReadyMessage;
+    public void notifyListener(){
         for (EventListener eventListener : this.orderList) {
-            eventListener.update(this.orderReadyMessage);
+            eventListener.update();
         }
     }
 }

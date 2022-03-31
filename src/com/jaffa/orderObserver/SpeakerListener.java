@@ -4,8 +4,8 @@ public class SpeakerListener implements EventListener
 {
     private String orderMessage = "*Attention* ORDER READY *Attention*";
     @Override
-    public void update(Object orderMessage)
+    public void update()
     {
-        System.out.println(orderMessage);
+        System.out.println(this.orderMessage);
     }
 }

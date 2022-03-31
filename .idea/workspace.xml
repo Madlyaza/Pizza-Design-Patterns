@@ -2,12 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4be5a84d-0763-467f-8977-bb358c1ca02f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/runConfigurations.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/CancelCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/CancelCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/Command.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/Command.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/ItalianRestaurant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/ItalianRestaurant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/OrderingSystem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/OrderingSystem.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/NextCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/NextCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/PreviousCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/interfaceCommander/commands/PreviousCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/jaffa/pizzaBuilder/Director.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/pizzaBuilder/Director.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/orderObserver/BleeperListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/orderObserver/BleeperListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/orderObserver/EventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/orderObserver/EventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/orderObserver/OrderManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/orderObserver/OrderManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/orderObserver/ScreenListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/orderObserver/ScreenListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/jaffa/orderObserver/SpeakerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/jaffa/orderObserver/SpeakerListener.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -153,6 +157,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

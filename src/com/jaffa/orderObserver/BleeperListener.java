@@ -4,8 +4,8 @@ public class BleeperListener implements EventListener
 {
     private String orderMessage = "BLEEP BLEEP";
     @Override
-    public void update(Object orderMessage)
+    public void update()
     {
-        System.out.println(orderMessage);
+        System.out.println(this.orderMessage);
     }
 }

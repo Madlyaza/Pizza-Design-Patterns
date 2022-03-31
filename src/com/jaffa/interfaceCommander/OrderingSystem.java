@@ -1,12 +1,14 @@
 package com.jaffa.interfaceCommander;
 
 import com.jaffa.interfaceCommander.commands.CancelCommand;
-import com.jaffa.interfaceCommander.commands.Command;
 import com.jaffa.interfaceCommander.commands.NextCommand;
+import com.jaffa.orderObserver.BleeperListener;
+import com.jaffa.orderObserver.OrderManager;
+import com.jaffa.orderObserver.ScreenListener;
+import com.jaffa.orderObserver.SpeakerListener;
 import com.jaffa.pizzaBuilder.CalzonePizzaBuilder;
 import com.jaffa.pizzaBuilder.Director;
 import com.jaffa.pizzaBuilder.FlatPizzaBuilder;
-import com.jaffa.pizzaBuilder.components.bases.BaseType;
 import com.jaffa.pizzaBuilder.pizzas.Calzone;
 import com.jaffa.pizzaFactory.ConcreteCreatorBread;
 import com.jaffa.pizzaFactory.ConcreteCreatorPizza;
@@ -14,10 +16,6 @@ import com.jaffa.pizzaFactory.Creator;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
@@ -103,4 +101,15 @@ public class OrderingSystem
         director.constructFlatPizza(builder, builderMap);
         builder.getPizza().printInfo();
     }
+
+    public void notifier()
+    {
+        OrderManager orderManager = new OrderManager();
+
+        orderManager.subscribe(new ScreenListener());
+        orderManager.subscribe(new BleeperListener());
+        orderManager.subscribe(new SpeakerListener());
+        orderManager.notifyListener();
+    }
+
 }

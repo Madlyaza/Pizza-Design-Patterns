@@ -36,11 +36,13 @@ public class NextCommand extends Command
                 break;
             case "Margherita", "Salami", "Pepperoni":
                 addToComboBox(new String[]{"Custom Pizza", "Pre Build Pizza", "Bread"});
+                orderingSystem.label.setText("Choose order");
                 orderingSystem.pizzaFactoryCreator(selectedChoice);
                 orderingSystem.notifier();
                 break;
             case "Healthy", "Döner":
                 addToComboBox(new String[]{"Custom Pizza", "Pre Build Pizza", "Bread"});
+                orderingSystem.label.setText("Choose order");
                 orderingSystem.breadFactoryCreator(selectedChoice);
                 orderingSystem.notifier();
                 break;

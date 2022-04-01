@@ -14,14 +14,17 @@ public abstract class Bread {
         this.sauce = sauce;
     }
 
+
     public String getName(){
         return name;
     }
 
+    //Function to notify the user when is preparing
     public void prepare() {
         System.out.println("Preparing " + name);
     }
 
+    //Function to notify the user when is baking
     public void bake() {
         System.out.println("Baking " + name);
     }

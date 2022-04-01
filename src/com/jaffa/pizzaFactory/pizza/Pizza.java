@@ -18,22 +18,27 @@ public abstract class Pizza {
         return name;
     }
 
+    //Function to notify the user when is preparing
     public void prepare() {
         System.out.println("Preparing " + name);
     }
 
+    //Function to notify the user when is baking
     public void bake() {
         System.out.println("Baking " + name);
     }
 
+    //Function to notify the user when is cutting
     public void cut() {
         System.out.println("Cutting " + name);
     }
 
+    //Function to notify the user when is boxing
     public void box() {
         System.out.println("Boxing " + name);
     }
 
+    //Display the pizza
     public String toString() {
         StringBuffer display = new StringBuffer();
         display.append("---- " + name + " ----\n");

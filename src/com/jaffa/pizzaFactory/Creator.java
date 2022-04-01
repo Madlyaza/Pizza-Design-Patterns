@@ -13,6 +13,7 @@ public class Creator
         this.breadFactory = breadFactory;
     }
 
+    //order a pre build pizza
     public Pizza orderPizza(String type){
         Pizza pizza;
 
@@ -26,6 +27,7 @@ public class Creator
         return pizza;
     }
 
+    //order a pre build sandwich
     public Bread orderBread(String type){
         Bread bread;
 

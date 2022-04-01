@@ -32,6 +32,7 @@ public class FlatPizzaBuilder implements PizzaBuilder
         this.toppings.addTopping(toppingType);
     }
 
+    //Returns the flat pizza
     public Flat getPizza()
     {
         return new Flat(baseType, sauceType, toppings);

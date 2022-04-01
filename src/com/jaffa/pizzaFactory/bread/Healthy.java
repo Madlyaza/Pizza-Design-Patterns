@@ -1,6 +1,8 @@
 package com.jaffa.pizzaFactory.bread;
 
 public class Healthy extends Bread{
+
+    //The healthy sandwich
     public Healthy(){
         super("Healthy", "Pistolet", "Honey Mustard sauce");
         this.toppings.add("Lettuce");

@@ -32,6 +32,7 @@ public class CalzonePizzaBuilder implements PizzaBuilder
         this.toppings.addTopping(toppingType);
     }
 
+    //return the calzone pizza
     public Calzone getPizza()
     {
         return new Calzone(baseType, sauceType, toppings);

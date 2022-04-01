@@ -9,6 +9,7 @@ import java.util.Map;
 
 public class Director
 {
+    //constructs the calzone pizza
     public void constructCalzonePizza(PizzaBuilder builder, Map map)
     {
         builder.setPizzaBase(BaseType.CALZONE);
@@ -24,6 +25,7 @@ public class Director
         }
     }
 
+    //constructs the flat pizza
     public void constructFlatPizza(PizzaBuilder builder, Map map)
     {
         builder.setPizzaBase(BaseType.FLAT);

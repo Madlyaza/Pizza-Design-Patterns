@@ -2,6 +2,7 @@ package com.jaffa.pizzaBuilder.components.toppings;
 
 import java.util.ArrayList;
 
+//Toppings added to arraylist
 public class Toppings
 {
     private final ArrayList<ToppingType> toppings;

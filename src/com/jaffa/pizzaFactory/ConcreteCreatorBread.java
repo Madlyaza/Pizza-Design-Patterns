@@ -4,6 +4,7 @@ import com.jaffa.pizzaFactory.bread.Bread;
 import com.jaffa.pizzaFactory.bread.Döner;
 import com.jaffa.pizzaFactory.bread.Healthy;
 
+//Check the type of sandwich
 public class ConcreteCreatorBread {
     public Bread createBread(String breadType){
         if(breadType == null){

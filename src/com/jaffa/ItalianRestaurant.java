@@ -14,6 +14,7 @@ import com.jaffa.interfaceCommander.OrderingSystem;
 
 import java.awt.*;
 
+//the main of the Italian restaurant
 public class ItalianRestaurant
 {
     public static void main(String[] args)

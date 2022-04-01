@@ -34,6 +34,7 @@ public class Calzone
         return toppings;
     }
 
+    //The info of the calzone displayed
     public String printInfo()
     {
         String info = "";

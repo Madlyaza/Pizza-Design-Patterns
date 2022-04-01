@@ -33,6 +33,7 @@ public class Flat
         return toppings;
     }
 
+    //The info of the flat pizza displayed
     public String printInfo()
     {
         String info = "";

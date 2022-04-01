@@ -22,17 +22,5 @@ public class ItalianRestaurant
     {
         OrderingSystem orderingSystem = new OrderingSystem();
         orderingSystem.init();
-
-//        Director director = new Director();
-//        CalzonePizzaBuilder builder = new CalzonePizzaBuilder();
-//        director.constructCalzonePizza(builder);
-//
-//        Calzone pizza = builder.getPizza();
-//        System.out.println(pizza.printInfo());
-    }
-
-    ItalianRestaurant()
-    {
-
     }
 }

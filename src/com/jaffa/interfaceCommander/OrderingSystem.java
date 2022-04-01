@@ -18,11 +18,7 @@ import com.jaffa.pizzaFactory.Creator;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
-import java.lang.reflect.Array;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Objects;
+import java.util.*;
 
 public class OrderingSystem
 {
@@ -31,9 +27,12 @@ public class OrderingSystem
     public Map<String, String> builderMap = new HashMap<>();
     public ArrayList<Integer> keyCodes;
     OrderingSystem orderingSystem = this;
+    public Stack<String> lastChoiceArray;
 
+    // Initializes the GUI and all its components
     public void init()
     {
+        this.lastChoiceArray = new Stack<>();
         this.keyCodes = new ArrayList<>();
         KeyListener keyListener = new ShortcutListener();
         JFrame frame = new JFrame("Start Your Order");
@@ -56,7 +55,13 @@ public class OrderingSystem
 
         ctrlX.addActionListener(e -> new CancelCommand(orderingSystem).execute(Objects.requireNonNull(cb.getSelectedItem()).toString()));
         ctrlC.addActionListener(e -> new NextCommand(orderingSystem).execute(Objects.requireNonNull(cb.getSelectedItem()).toString()));
-        ctrlZ.addActionListener(e -> new PreviousCommand(orderingSystem).execute(Objects.requireNonNull(cb.getSelectedItem()).toString()));
+        ctrlZ.addActionListener(e ->
+        {
+            if(lastChoiceArray.size() > 0)
+            {
+                new PreviousCommand(orderingSystem).execute(lastChoiceArray.lastElement());
+            }
+        });
 
         buttons.add(ctrlX);
         buttons.add(ctrlC);
@@ -69,6 +74,7 @@ public class OrderingSystem
         frame.setVisible(true);
     }
 
+    // Creates the pizza factory for ordering a pizza
     public void pizzaFactoryCreator(String pizzaString)
     {
         ConcreteCreatorPizza pizzaFactory = new ConcreteCreatorPizza();
@@ -77,6 +83,7 @@ public class OrderingSystem
         factory.orderPizza(pizzaString);
     }
 
+    // Creates the bread factory for ordering bread
     public void breadFactoryCreator(String breadString)
     {
         ConcreteCreatorPizza pizzaFactory = new ConcreteCreatorPizza();
@@ -85,6 +92,7 @@ public class OrderingSystem
         factory.orderBread(breadString);
     }
 
+    // Calls the pizza builder for creating a custom pizza
     public void pizzaBuilder()
     {
         if(builderMap.get("BaseType").equals("CALZONE"))
@@ -97,6 +105,7 @@ public class OrderingSystem
         }
     }
 
+    // Creates the pizza builder for calzone custom pizza
     public void calzoneBuilder()
     {
         Director director = new Director();
@@ -106,6 +115,7 @@ public class OrderingSystem
         System.out.println(pizza.printInfo());
     }
 
+    // Creates the pizza builder for flat custom pizza
     public void flatBuilder()
     {
         Director director = new Director();
@@ -114,6 +124,7 @@ public class OrderingSystem
         builder.getPizza().printInfo();
     }
 
+    // Calls the notifier so that people get notified of their order
     public void notifier()
     {
         OrderManager orderManager = new OrderManager();
@@ -124,6 +135,7 @@ public class OrderingSystem
         orderManager.notifyListener();
     }
 
+    // The keyboard listener listens to the keyboard inputs and executes the commands
     public class ShortcutListener implements KeyListener {
         @Override
         public void keyTyped(KeyEvent e) {
@@ -139,7 +151,10 @@ public class OrderingSystem
                 }
                 else if(e.getKeyCode() == 90) // Z
                 {
-                    new PreviousCommand(orderingSystem).execute(Objects.requireNonNull(cb.getSelectedItem()).toString());
+                    if(lastChoiceArray.size() > 0)
+                    {
+                        new PreviousCommand(orderingSystem).execute(Objects.requireNonNull(lastChoiceArray.lastElement()));
+                    }
                 }
                 else if(e.getKeyCode() == 88) //X
                 {

@@ -14,9 +14,11 @@ public class NextCommand extends Command
         super(orderingSystem);
     }
 
+    // The code that will be executed when the command gets called
     @Override
     public boolean execute(String selectedChoice)
     {
+        orderingSystem.lastChoiceArray.push(selectedChoice);
         switch (selectedChoice)
         {
             case "Custom Pizza":
@@ -69,6 +71,7 @@ public class NextCommand extends Command
                 orderingSystem.pizzaBuilder();
                 setLabel("Choose order");
                 orderingSystem.builderMap.clear();
+                orderingSystem.lastChoiceArray.clear();
                 orderingSystem.notifier();
                 break;
             default:
@@ -77,13 +80,5 @@ public class NextCommand extends Command
         return true;
     }
 
-    public void removeFromComboBox(String choice)
-    {
-        orderingSystem.cb.removeItem(choice);
-    }
 
-    public void setLabel(String text)
-    {
-        orderingSystem.label.setText(text);
-    }
 }

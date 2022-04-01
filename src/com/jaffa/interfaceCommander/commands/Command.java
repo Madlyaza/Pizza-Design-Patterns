@@ -11,6 +11,7 @@ public abstract class Command {
 
     public abstract boolean execute(String string);
 
+    // Adds the given string list to the combo box
     public void addToComboBox(String[] list)
     {
         orderingSystem.cb.removeAllItems();
@@ -18,5 +19,17 @@ public abstract class Command {
         {
             orderingSystem.cb.addItem(item);
         }
+    }
+
+    // Sets the label on the GUI
+    public void setLabel(String text)
+    {
+        orderingSystem.label.setText(text);
+    }
+
+    // Removes the given choice from the combo box
+    public void removeFromComboBox(String choice)
+    {
+        orderingSystem.cb.removeItem(choice);
     }
 }

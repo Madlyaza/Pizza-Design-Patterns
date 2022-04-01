@@ -15,10 +15,10 @@ public class Director
         builder.setPizzaBase(BaseType.CALZONE);
         builder.setPizzaSauce(SauceType.valueOf(map.get("SauceType").toString()));
         Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
-        while(iterator.hasNext())
+        while (iterator.hasNext())
         {
             Map.Entry<String, String> entry = iterator.next();
-            if(!entry.getKey().equals("BaseType") && !entry.getKey().equals("SauceType"))
+            if (!entry.getKey().equals("BaseType") && !entry.getKey().equals("SauceType"))
             {
                 builder.setPizzaTopping(ToppingType.valueOf(entry.getValue()));
             }
@@ -31,10 +31,10 @@ public class Director
         builder.setPizzaBase(BaseType.FLAT);
         builder.setPizzaSauce(SauceType.valueOf(map.get("SauceType").toString()));
         Iterator<Map.Entry<String, String>> iterator = map.entrySet().iterator();
-        while(iterator.hasNext())
+        while (iterator.hasNext())
         {
             Map.Entry<String, String> entry = iterator.next();
-            if(!entry.getKey().equals("BaseType") && !entry.getKey().equals("SauceType"))
+            if (!entry.getKey().equals("BaseType") && !entry.getKey().equals("SauceType"))
             {
                 builder.setPizzaTopping(ToppingType.valueOf(entry.getValue()));
             }

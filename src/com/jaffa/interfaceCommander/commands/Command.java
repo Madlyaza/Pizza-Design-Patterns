@@ -2,10 +2,12 @@ package com.jaffa.interfaceCommander.commands;
 
 import com.jaffa.interfaceCommander.OrderingSystem;
 
-public abstract class Command {
+public abstract class Command
+{
     public OrderingSystem orderingSystem;
 
-    Command(OrderingSystem orderingSystem) {
+    Command(OrderingSystem orderingSystem)
+    {
         this.orderingSystem = orderingSystem;
     }
 

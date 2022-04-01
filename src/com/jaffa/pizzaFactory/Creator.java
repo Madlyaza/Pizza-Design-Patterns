@@ -8,13 +8,15 @@ public class Creator
     protected ConcreteCreatorPizza pizzaFactory;
     protected ConcreteCreatorBread breadFactory;
 
-    public Creator(ConcreteCreatorPizza pizzaFactory, ConcreteCreatorBread breadFactory) {
+    public Creator(ConcreteCreatorPizza pizzaFactory, ConcreteCreatorBread breadFactory)
+    {
         this.pizzaFactory = pizzaFactory;
         this.breadFactory = breadFactory;
     }
 
     //order a pre build pizza
-    public Pizza orderPizza(String type){
+    public Pizza orderPizza(String type)
+    {
         Pizza pizza;
 
         pizza = pizzaFactory.createPizza(type);
@@ -28,7 +30,8 @@ public class Creator
     }
 
     //order a pre build sandwich
-    public Bread orderBread(String type){
+    public Bread orderBread(String type)
+    {
         Bread bread;
 
         bread = breadFactory.createBread(type);

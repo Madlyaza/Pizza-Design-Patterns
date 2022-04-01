@@ -8,7 +8,8 @@ public enum ToppingType
 {
     CHEESE, BACON, EGG, PEPPERONI, PEPPER;
 
-    public static String[] names() {
+    public static String[] names()
+    {
         return Arrays.toString(ToppingType.values()).replaceAll("^.|.$", "").split(", ");
     }
 }

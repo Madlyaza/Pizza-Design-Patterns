@@ -6,18 +6,24 @@ import com.jaffa.pizzaFactory.pizza.Pizza;
 import com.jaffa.pizzaFactory.pizza.SalamiPizza;
 
 //check the type of pizza
-public class ConcreteCreatorPizza {
-    public Pizza createPizza(String pizzaType) {
-        if(pizzaType == null){
+public class ConcreteCreatorPizza
+{
+    public Pizza createPizza(String pizzaType)
+    {
+        if (pizzaType == null)
+        {
             return null;
         }
-        if(pizzaType.equalsIgnoreCase("margherita")){
+        if (pizzaType.equalsIgnoreCase("margherita"))
+        {
             return new MargheritaPizza();
         }
-        else if(pizzaType.equalsIgnoreCase("pepperoni")){
+        else if (pizzaType.equalsIgnoreCase("pepperoni"))
+        {
             return new PepperoniPizza();
         }
-        else if(pizzaType.equalsIgnoreCase("salami")){
+        else if (pizzaType.equalsIgnoreCase("salami"))
+        {
             return new SalamiPizza();
         }
 

@@ -57,7 +57,7 @@ public class OrderingSystem
         ctrlC.addActionListener(e -> new NextCommand(orderingSystem).execute(Objects.requireNonNull(cb.getSelectedItem()).toString()));
         ctrlZ.addActionListener(e ->
         {
-            if(lastChoiceArray.size() > 0)
+            if (lastChoiceArray.size() > 0)
             {
                 new PreviousCommand(orderingSystem).execute(lastChoiceArray.lastElement());
             }
@@ -95,11 +95,11 @@ public class OrderingSystem
     // Calls the pizza builder for creating a custom pizza
     public void pizzaBuilder()
     {
-        if(builderMap.get("BaseType").equals("CALZONE"))
+        if (builderMap.get("BaseType").equals("CALZONE"))
         {
             calzoneBuilder();
         }
-        else if(builderMap.get("BaseType").equals("FLAT"))
+        else if (builderMap.get("BaseType").equals("FLAT"))
         {
             flatBuilder();
         }
@@ -136,40 +136,44 @@ public class OrderingSystem
     }
 
     // The keyboard listener listens to the keyboard inputs and executes the commands
-    public class ShortcutListener implements KeyListener {
+    public class ShortcutListener implements KeyListener
+    {
         @Override
-        public void keyTyped(KeyEvent e) {
+        public void keyTyped(KeyEvent e)
+        {
         }
 
         @Override
-        public void keyPressed(KeyEvent e) {
-            if(keyCodes.contains(17)) // Ctrl
+        public void keyPressed(KeyEvent e)
+        {
+            if (keyCodes.contains(17)) // Ctrl
             {
-                if(e.getKeyCode() == 67) // C
+                if (e.getKeyCode() == 67) // C
                 {
                     new NextCommand(orderingSystem).execute(Objects.requireNonNull(cb.getSelectedItem()).toString());
                 }
-                else if(e.getKeyCode() == 90) // Z
+                else if (e.getKeyCode() == 90) // Z
                 {
-                    if(lastChoiceArray.size() > 0)
+                    if (lastChoiceArray.size() > 0)
                     {
                         new PreviousCommand(orderingSystem).execute(Objects.requireNonNull(lastChoiceArray.lastElement()));
                     }
                 }
-                else if(e.getKeyCode() == 88) //X
+                else if (e.getKeyCode() == 88) //X
                 {
                     new CancelCommand(orderingSystem).execute(Objects.requireNonNull(cb.getSelectedItem()).toString());
                 }
             }
-            if(e.getKeyCode() == 17) // Ctrl
+            if (e.getKeyCode() == 17) // Ctrl
             {
                 keyCodes.add(e.getKeyCode());
             }
         }
 
         @Override
-        public void keyReleased(KeyEvent e) {
-            if(e.getKeyCode() == 17) // Ctrl
+        public void keyReleased(KeyEvent e)
+        {
+            if (e.getKeyCode() == 17) // Ctrl
             {
                 keyCodes.clear();
             }

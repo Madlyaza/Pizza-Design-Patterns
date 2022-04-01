@@ -9,7 +9,8 @@ public enum BaseType
 {
     CALZONE, FLAT;
 
-    public static String[] names() {
+    public static String[] names()
+    {
         return Arrays.toString(BaseType.values()).replaceAll("^.|.$", "").split(", ");
     }
 }

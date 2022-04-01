@@ -38,14 +38,14 @@ public class Flat
     {
         String info = "";
         info += "Base: " + baseType + "\n";
-        if(sauceType != null)
+        if (sauceType != null)
         {
             info += "Sauce: " + sauceType + "\n";
         }
-        if(!toppings.getToppings().isEmpty())
+        if (!toppings.getToppings().isEmpty())
         {
             info += "Toppings: \n";
-            for (ToppingType toppingType:toppings.getToppings())
+            for (ToppingType toppingType : toppings.getToppings())
             {
                 info += "  - " + toppingType.name() + "\n";
             }

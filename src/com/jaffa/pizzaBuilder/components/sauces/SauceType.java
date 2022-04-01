@@ -9,7 +9,8 @@ public enum SauceType
 {
     BBQ, TOMATO, GARLIC;
 
-    public static String[] names() {
+    public static String[] names()
+    {
         return Arrays.toString(SauceType.values()).replaceAll("^.|.$", "").split(", ");
     }
 }

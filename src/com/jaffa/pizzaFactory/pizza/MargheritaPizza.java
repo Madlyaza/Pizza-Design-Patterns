@@ -1,9 +1,11 @@
 package com.jaffa.pizzaFactory.pizza;
 
-public class MargheritaPizza extends Pizza{
+public class MargheritaPizza extends Pizza
+{
 
     //The margherita pizza
-    public MargheritaPizza(){
+    public MargheritaPizza()
+    {
         super("Margherita", "Regular Crust", "Tomato Sauce");
         this.toppings.add("Cheese");
     }
